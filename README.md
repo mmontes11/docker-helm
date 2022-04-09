@@ -1,2 +1,2 @@
 # docker-helm
-Alpine linux docker image with bash, helm and helm chartmuseum push plugin  
+Alpine based docker image with bash, [helm](https://helm.sh/) and [helm cm push](https://github.com/chartmuseum/helm-push) plugin  
