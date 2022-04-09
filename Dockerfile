@@ -7,8 +7,6 @@ RUN case `uname -m` in \
   x86_64) ARCH=amd64; ;; \
   armv7l) ARCH=arm; ;; \
   aarch64) ARCH=arm64; ;; \
-  ppc64le) ARCH=ppc64le; ;; \
-  s390x) ARCH=s390x; ;; \
   *) echo "un-supported arch, exit ..."; exit 1; ;; \
   esac && \
   apk add --update --no-cache wget git && \
