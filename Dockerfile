@@ -3,6 +3,8 @@ FROM alpine:3.15.4
 ENV BASE_URL="https://get.helm.sh"
 ENV VERSION="3.8.1"
 
+RUN apk add --update --no-cache bash make
+
 RUN case `uname -m` in \
   x86_64) ARCH=amd64; ;; \
   armv7l) ARCH=arm; ;; \
